@@ -617,7 +617,7 @@ body.lang-en h3.en-only { display: block !important; }
           <a class="social-facebook" href="https://www.facebook.com/angelesgonzalezimmigrationconsultant/" target="_blank">📘 Facebook</a>
           <a class="social-instagram" href="https://www.instagram.com/angelesimmigrationconsultant/" target="_blank">📸 Instagram</a>
           <a class="social-google" href="https://www.google.com/search?q=Angeles+Gonzalez+Immigration+Consultant+Reviews#lrd=0x808506f68ba374f7:0xe00fba65cfcfe907,1" target="_blank">⭐ Google Reviews</a>
-          <a class="social-mapquest" href="https://www.mapquest.com/search/results?query=2180%20Jefferson%20St%20Ste%20103%2C%20Napa%2C%20CA%2094559" target="_blank">🗺️ MapQuest</a>
+          
           <a class="social-bbb" href="https://www.bbb.org/us/ca/napa/profile/immigration-consultant/angeles-gonzalez-immigration-consultant-1116-947735" target="_blank">🏆 BBB</a>
         </div>
       </div>
@@ -1011,7 +1011,7 @@ body.lang-en h3.en-only { display: block !important; }
           <span class="en en-only">WhatsApp:</span>
         </strong><br>
 
-        <a href="https://wa.me/17072558666">(707) 255-8666</a><br>
+        <a href="https://wa.me/17072558666?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20sus%20servicios%20migratorios.">(707) 255-8666</a><br>
 
         <span style="color:#8B0000;font-weight:bold;">
           <span class="es es-only">* WhatsApp es solo para mensajes de texto.</span>
@@ -1025,9 +1025,9 @@ body.lang-en h3.en-only { display: block !important; }
           📧 Email
         </a>
 
-        <a href="https://wa.me/17072558666"
+        <a href="https://wa.me/17072558666?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20sus%20servicios%20migratorios."
           style="background:#16803c;padding:16px 24px;border-radius:16px;">
-          💬 WhatsApp
+          💬 WhatsApp <span class="es es-only">(solo texto)</span><span class="en en-only">(text only)</span>
         </a>
 
         <a href="tel:17072558666"
@@ -1037,32 +1037,45 @@ body.lang-en h3.en-only { display: block !important; }
       </div>
     </div>
 
-    <div class="card">
+    
+    <div class="card" id="send-message-card">
       <h2>
         <span class="es es-only">Envíanos un Mensaje</span>
         <span class="en en-only">Send Us a Message</span>
       </h2>
 
-      <form style="display:grid;gap:18px;margin-top:25px;">
-        <input type="text" placeholder="Nombre / Name"
-          style="padding:16px;border-radius:14px;border:1px solid #d8c8aa;font-size:16px;">
+      <p style="color:#071b3b;font-size:16px;line-height:1.6;margin-top:8px;">
+        <span class="es es-only">Complete esta forma y haga clic en “Enviar Mensaje”. Se abrirá su aplicación de correo electrónico para enviar el mensaje.</span>
+        <span class="en en-only">Complete this form and click “Send Message.” Your email application will open to send the message.</span>
+      </p>
 
-        <input type="email" placeholder="Correo Electrónico / Email"
-          style="padding:16px;border-radius:14px;border:1px solid #d8c8aa;font-size:16px;">
+      <form id="contactForm" style="display:grid;gap:18px;margin-top:25px;">
+        <input id="contactName" name="name" type="text" placeholder="Nombre / Name" required
+          style="padding:16px;border-radius:14px;border:1px solid #d8c8aa;font-size:16px;color:#071b3b;background:#ffffff;">
 
-        <input type="text" placeholder="Número de Teléfono / Phone Number"
-          style="padding:16px;border-radius:14px;border:1px solid #d8c8aa;font-size:16px;">
+        <input id="contactEmail" name="email" type="email" placeholder="Correo Electrónico / Email" required
+          style="padding:16px;border-radius:14px;border:1px solid #d8c8aa;font-size:16px;color:#071b3b;background:#ffffff;">
 
-        <textarea placeholder="Mensaje / Message"
-          style="padding:16px;border-radius:14px;border:1px solid #d8c8aa;font-size:16px;min-height:180px;"></textarea>
+        <input id="contactPhone" name="phone" type="tel" placeholder="Número de Teléfono / Phone Number"
+          style="padding:16px;border-radius:14px;border:1px solid #d8c8aa;font-size:16px;color:#071b3b;background:#ffffff;">
 
-        <button type="submit" class="send-message-button"
+        <textarea id="contactMessage" name="message" placeholder="Mensaje / Message" required
+          style="padding:16px;border-radius:14px;border:1px solid #d8c8aa;font-size:16px;min-height:180px;color:#071b3b;background:#ffffff;"></textarea>
+
+        <button id="sendEmailButton" type="submit"
           style="background:#06224a !important;color:#ffffff !important;-webkit-text-fill-color:#ffffff !important;border:none;padding:18px;border-radius:16px;font-size:18px;font-weight:900;cursor:pointer;text-align:center;">
           <span class="es es-only" style="color:#ffffff !important;-webkit-text-fill-color:#ffffff !important;">Enviar Mensaje</span>
           <span class="en en-only" style="color:#ffffff !important;-webkit-text-fill-color:#ffffff !important;">Send Message</span>
         </button>
       </form>
+
+      <p style="margin-top:16px;color:#8B0000;font-weight:bold;font-size:15px;line-height:1.5;">
+        <span class="es es-only">Nota: Si no se abre su correo, también puede escribir directamente a: </span>
+        <span class="en en-only">Note: If your email does not open, you may also write directly to: </span>
+        <a href="mailto:gonzalez-angeles@outlook.com" style="color:#0b3d91;">gonzalez-angeles@outlook.com</a>
+      </p>
     </div>
+
 </main>
 
 
@@ -1091,6 +1104,15 @@ body.lang-en h3.en-only { display: block !important; }
 
 
 
+
+
+
+
+
+
+
+
+
 <script>
 function showPage(id){
   document.querySelectorAll('.page').forEach(function(page){
@@ -1108,7 +1130,7 @@ function showPage(id){
 }
 
 function setLang(lang){
-  document.body.classList.remove('lang-es', 'lang-en');
+  document.body.classList.remove('lang-es','lang-en');
   document.body.classList.add('lang-' + lang);
 
   var esBtn = document.getElementById('btn-es');
@@ -1123,6 +1145,31 @@ function setLang(lang){
   try { localStorage.setItem('siteLanguage', lang); } catch(e) {}
 }
 
+function sendContactEmail(event){
+  if(event){ event.preventDefault(); }
+
+  var name = document.getElementById('contactName') ? document.getElementById('contactName').value.trim() : '';
+  var email = document.getElementById('contactEmail') ? document.getElementById('contactEmail').value.trim() : '';
+  var phone = document.getElementById('contactPhone') ? document.getElementById('contactPhone').value.trim() : '';
+  var message = document.getElementById('contactMessage') ? document.getElementById('contactMessage').value.trim() : '';
+
+  if(!name || !email || !message){
+    alert('Por favor complete su nombre, correo electrónico y mensaje. / Please complete your name, email, and message.');
+    return false;
+  }
+
+  var subject = encodeURIComponent('Mensaje desde la página web - Angeles Gonzalez Immigration Consultant');
+  var body = encodeURIComponent(
+    'Nombre / Name: ' + name + '\n' +
+    'Correo / Email: ' + email + '\n' +
+    'Teléfono / Phone: ' + phone + '\n\n' +
+    'Mensaje / Message:\n' + message
+  );
+
+  window.location.href = 'mailto:gonzalez-angeles@outlook.com?subject=' + subject + '&body=' + body;
+  return false;
+}
+
 document.addEventListener('DOMContentLoaded', function(){
   var savedLang = 'es';
   try { savedLang = localStorage.getItem('siteLanguage') || 'es'; } catch(e) {}
@@ -1132,6 +1179,11 @@ document.addEventListener('DOMContentLoaded', function(){
   document.querySelectorAll('.page').forEach(function(page){
     page.style.display = (page === active) ? 'block' : 'none';
   });
+
+  var form = document.getElementById('contactForm');
+  if(form){
+    form.addEventListener('submit', sendContactEmail);
+  }
 });
 </script>
 
